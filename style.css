@@ -145,12 +145,12 @@ body{
     width: 72%;
     margin-left: 27%;
     height: fit-content;
-    overflow: hidden;
+    overflow-y: hidden;
     display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 999;
+    align-items: center; 
+    
 }
+
 .hero:nth-child(2){
     margin-top: 18vh;
 }
@@ -159,7 +159,16 @@ body{
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
-
+    position: relative;
+}
+#hero1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-weight:100;
+    font-family: "silk serif";
+    left: 20%;
+    top: 29%;
 }
 .hero h2{
     font-size: 7.2vw;
@@ -236,11 +245,21 @@ body{
     width: 72vw;
     position: relative;
     margin-left: 28%;
-
 }
+
 #page4-content h1{
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
+}
+#page4-content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-weight:100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%;
 }
 #page4-content .uncerline{
     height: 1px;
@@ -294,4 +313,169 @@ body{
 #page5{
     min-height: 100vh;
     width: 100%;
+    position: relative;
+}
+/* .elem{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 1vw;
+}
+.elem h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    /* background-color: red; */
+    /* display: inline-block;
+    margin-right: 16px;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} */
+/* @keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% -20%));
+    }
+} */
+
+/* .elem2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: 1vw;
+} */
+/* .elem2 h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    /* background-color: red; */
+    /* display: inline-block; */
+    /* transform: translateX(calc(-100% -20%)); */
+    /* animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+/* } */
+
+.elem, .elem2 {
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -2vw;
+    display: flex;
+}
+
+.elem h1, .elem2 h1 {
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 16px;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Move lines 1 and 3 in one direction */
+.elem h1 {
+    animation-name: moveRight;
+}
+
+/* Move lines 2 and 4 in the reverse direction */
+.elem2 h1 {
+    animation-name: moveLeft;
+}
+
+/* Forward animation */
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - 20%));
+    }
+}
+
+/* Reverse animation */
+@keyframes moveLeft {
+    from {
+        transform: translateX(calc(-100% - 20%));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.elem span{
+    font-style: italic;
+    font-family: "silk sarif";
+    color: transparent;
+}
+.elem2 span{
+    font-style: italic;
+    font-family: "silk sarif";
+    color: transparent;
+}
+#footer{
+    height: 85vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative; 
+    padding-left: 28vw;
+    padding-right: 2vw;
+}
+#footer h1{
+    font-size: 7vw; 
+    text-transform: uppercase;
+    /* background-color: blue; */
+    position: relative;
+}
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-weight:100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%;
+}
+.underline{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 3vw 0;
+}
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 6vw;
+}
+#footer-div h6{
+    font-size: 0.9vw;
+    margin-bottom: 1.5vw;
+    font-weight: 500;
+}
+.box{
+    width: 20%;
+}
+#footer-div h5{
+    font-size: 1.4vw;
+    font-weight: 500;
+    margin: 0.1vh 0;
+
+}
+#footer>h5{
+    font-weight: 500;
+    font-size: 1vw;
 }
