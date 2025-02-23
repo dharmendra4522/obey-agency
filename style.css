@@ -75,11 +75,11 @@ body{
     text-transform: uppercase;
     font-weight: 900;
     opacity: 0;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     
 }
-@keyframes anime {
+@keyframes loaderanime {
     0%{
         font-family: "plain light";
         -webkit-text-stroke: 1px #fff;
